@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: true
+  tasks:
+    - name: invoke a shell command
+      shell: echo "hello there from a test" 
+      register: sys_time
+
+    - debug: var=sys_time
+
