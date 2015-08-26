@@ -1,0 +1,14 @@
+---
+- name: deploy a server
+  hosts: localhost
+  gather_facts: False
+  connection: local
+  tasks:
+    - name: create a single server
+      clc_server:
+        name: tst
+        template: ubuntu-14-64
+        count: 1
+        group: 'Default Group'
+      register: clc_svr
+    - debug: var=clc_svr
