@@ -1,0 +1,9 @@
+---
+- name: stat a server
+  hosts: all 
+  gather_facts: True 
+  tasks:
+    - name: stat dpkg.log 
+      stat: path=/var/log/dpkg.log
+      register: stat_svr
+    - debug: var=stat_svr
