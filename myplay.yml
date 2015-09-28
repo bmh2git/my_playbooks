@@ -3,8 +3,6 @@
   gather_facts: true
   tasks:
     - name: invoke a shell command
-      shell: echo "hello there from a Test" 
-      register: sys_time
-
-    - debug: var=sys_time
-
+      shell: echo "The time is now $(date)" 
+      register: out_put
+    - debug: var=out_put.stdout
