@@ -1,0 +1,21 @@
+---
+- name: Test Stop Feature
+  hosts: all
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Sleep Once
+      pause:
+        minutes=1
+        prompt="Sleep Once"
+
+    - name: Sleep Twice 
+      pause:
+        minutes=1
+        prompt="Sleep Twice"
+
+    - name: Sleep Thrice 
+      pause:
+        minutes=1
+        prompt="Sleep Thrice"
+    
