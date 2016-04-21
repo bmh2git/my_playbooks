@@ -1,0 +1,58 @@
+---
+- name: Lots of Tasks Playbook
+  hosts: localhost
+  tasks:
+    - name: Time 1
+      debug: msg="{{ansible_date_time.date}} {{ansible_date_time.time}}"
+    - name: Please hold
+      pause:
+        seconds: 15
+
+    - name: Time 2
+      debug: msg="{{ansible_date_time.date}} {{ansible_date_time.time}}"
+    - name: Please hold
+      pause:
+        seconds: 15
+
+    - name: Time 3
+      debug: msg="{{ansible_date_time.date}} {{ansible_date_time.time}}"
+    - name: Please hold
+      pause:
+        seconds: 15
+
+    - name: Time 4
+      debug: msg="{{ansible_date_time.date}} {{ansible_date_time.time}}"
+    - name: Please hold
+      pause:
+        seconds: 15
+
+    - name: Time 5
+      debug: msg="{{ansible_date_time.date}} {{ansible_date_time.time}}"
+    - name: Please hold
+      pause:
+        seconds: 15
+
+    - name: Time 6
+      debug: msg="{{ansible_date_time.date}} {{ansible_date_time.time}}"
+    - name: Please hold
+      pause:
+        seconds: 15
+
+    - name: Time 7
+      debug: msg="{{ansible_date_time.date}} {{ansible_date_time.time}}"
+    - name: Please hold
+      pause:
+        seconds: 15
+
+    - name: Time 8
+      debug: msg="{{ansible_date_time.date}} {{ansible_date_time.time}}"
+    - name: Please hold
+      pause:
+        seconds: 15
+
+    - name: Time 9
+      debug: msg="{{ansible_date_time.date}} {{ansible_date_time.time}}"
+    - name: Please hold
+      pause:
+        seconds: 15
+
